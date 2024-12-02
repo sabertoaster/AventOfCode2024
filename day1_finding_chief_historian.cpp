@@ -78,7 +78,7 @@ int similarity_score(vector<int> &a, vector<int> &b)
 int main()
 {
     vector<int> a, b;
-    read_file("input.txt", a, b); // My input for reference
+    read_file("input_day1.txt", a, b); // My input for reference
     qsort(a);
     qsort(b);
     
