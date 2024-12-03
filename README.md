@@ -1,4 +1,4 @@
-# AventOfCode_2024
+# Avent Of Code 2024
 <br>
 This is my repo for Advent Of Code 2024
 <br>
