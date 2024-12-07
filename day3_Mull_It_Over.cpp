@@ -3,9 +3,9 @@
 
 using namespace std;
 
-long long process_line(const string &line)
+ll process_line(const string &line)
 {
-    long long sum = 0;
+    ll sum = 0;
     regex const pattern{R"~(mul\(-?\d+,-?\d+\))~"};
     regex const numbers{R"~(\d+)~"};
 
@@ -22,9 +22,9 @@ long long process_line(const string &line)
     return sum;
 }
 
-long long process_line_p2(const string &line)
+ll process_line_p2(const string &line)
 {
-    long long sum_ = 0;
+    ll sum_ = 0;
     regex const pattern{R"~(mul\(-?\d+,-?\d+\)|do\(\)|don\'t\(\))~"};
     regex const numbers{R"~(\d+)~"};
 
@@ -57,7 +57,7 @@ long long process_line_p2(const string &line)
 int main()
 {
     // process_line_p2(R"~(xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5)mul(8,5)))~");
-    long long total_sum = 0;
+    ll total_sum = 0;
     ifstream file("input/day3.txt");
     string line;
 
